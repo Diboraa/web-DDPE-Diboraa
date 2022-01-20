@@ -1,0 +1,25 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+form {
+    border: 1px solid #eee6e6;
+  }
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #06b406;
+  }
+  .cancelbtn:hover
+  {
+
+opacity: 0.7;
+
+  }
+  
+  
