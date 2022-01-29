@@ -71,6 +71,8 @@ var aud=document.getElementById("myaudio");aud.onplaying=function()
 {
     alert("the audio is now playing")
 };
+  var del=document.getElementById("myaudio");
+     del.remove();
 </script>
                       <hr>
                     <p <b>Pick of The Week</b></p>
@@ -109,6 +111,7 @@ Second 5GB Mobile Data
 Third 1GB Mobile Data
 ------------------------------
 </pre>
+      <button onclick="myfun()"> remove</button>
 </td>
                 <td width="10%"></td>
             </tr>
