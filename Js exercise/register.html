@@ -7,55 +7,6 @@
 <meta name=" author" content="Dibora Daba">
 
 <title>register</title>
-<script>
-
-function User(planeName){
-
-this.name=planeName;
-
-this.print=function(){
-
-document.getElementById("txt").innerHTML=this.name+" ";
-
-}
-
-}
-
-var UserMe=new User("txt");
-
-
-
-User.prototype.info=function(){
-
-var i=document.getElementById("name").value;
-
-var j=document.getElementById("phone").value;
-
-var k=document.getElementById("age").value;
-
-var p=document.getElementById("color").value;
-
-var l=document.getElementById("birthdate").value;
-
-var n=document.getElementById("skills").checked;
-
-var o=document.getElementById("country").value;
-
-document.getElementById("txt").innerHTML="<h1>Registered</h1>\n<h2>Welcome "+i+"</h2>\n<b>Your full info</b>\nName: <i>"+i+"</i>\nPhone Number: "+j+"\nYou are: "+k+" years old"+"\nYour favourite color: 'airplane'"+p+"\nBirthdate: "+l+"\nSkills: "+n+"\nCountry: "+o;
-
-var pre=document.getElementById("data");
-
-var arr=pre.childNodes;
-
-for(var x=0;x<(arr.length-4);x++){
-
-arr[x].innerHTML=" ";}
-
-}
-
-
-
-</script>
 </head>
 
 <body >
@@ -149,8 +100,7 @@ onmouseup="myFunction(this,'green')"> Registaration form</p>
 <br /><br />
 		 describe yourself<br> <textarea rows ="10" cols="50" name="description"></textarea>
 <br /><br />
-                 
- <button onclick="UserMe.info()"> Submit</button>
+                 <input type ="button" name="Submit" value="Submit"/>
                  <input type ="button" name="Reset" value="Reset"/>
 <br />
   		</form>
