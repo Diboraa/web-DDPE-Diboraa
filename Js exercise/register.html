@@ -1,23 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name=" description" content="About life-hack ">
-<meta name=" key words" content="Life, Jack Ma,recent posts,Eric Hoffer">
-<meta name=" author" content="Dibora Daba">
+ <head>
+  <title>life hacks index.pdf</title>
+  <meta charset="UTF-8">
+  <meta name=" description" content="life-hacks">
+  <meta name=" key words" content="Life, Life hacks, Jack Ma, Eric Hoffer, Power of Self-Education, Overcame Failure">
+<script>
+function User(planeName){
+this.name=planeName;
+this.print=function(){
+document.getElementById("txt").innerHTML=this.name+" ";
+}
+}
+var UserMe=new User("txt");
 
-<title>register</title>
-</head>
+User.prototype.info=function(){
+var i=document.getElementById("name").value;
+var j=document.getElementById("phone").value;
+var k=document.getElementById("age").value;
+var p=document.getElementById("color").value;
+var l=document.getElementById("birthdate").value;
+var n=document.getElementById("skills").checked;
+var o=document.getElementById("country").value;
+document.getElementById("txt").innerHTML="<h1>Registered</h1>\n<h2>Welcome "+i+"</h2>\n<b>Your full info</b>\nName: <i>"+i+"</i>\nPhone Number: "+j+"\nYou are: "+k+" years old"+"\nYour favourite color: 'airplane'"+p+"\nBirthdate: "+l+"\nSkills: "+n+"\nCountry: "+o;
+var pre=document.getElementById("data");
+var arr=pre.childNodes;
+for(var x=0;x<(arr.length-4);x++){
+arr[x].innerHTML=" ";}
+}
 
-<body >
-    <table  width="100%">
-          <tr>
-                <td width="10%"></td>
-                <td width="60%"><img src="logo_gold.png" width="60" height="100" ></td>
-                <td width="20%"><a href="podcast.html">Podcast</a>
-                                <a href="Articles.html ">Articles</a>
-                                <a href="Ideas.html ">Ideas</a>
-                                <a href="Signin.html">Signin</a>
+</script>
+ </head>
+ <body>
+  <table width="100%">
+   <tr>
+    <td width="10%"></td>
+    <td width="60%"><img src="Resourses\Images\logo_gold.png" width="60" height="100" ></td>
+    <td width="20%">
+    <a href=" ">Podcast</a> | 
+    <a href=" ">Articles</a> | 
+    <a href=" ">Ideas</a> |
+                                <a href="Signin.html">Signin</a> | 
                                 <a href="Register.html">Register</a></td>
                 <td width="10%"></td>                 
             </tr>
@@ -26,167 +49,109 @@
         <table width="100%">
             <tr>
                 <td width="10%"></td>
-                <td colspan="2" align="right" ><a href="gotobottum.html">Go To bottum</a></td>  
+                <td colspan="2" align ="right" ><a href="gotobottum.html">Go To bottum</a></td>  
                 <td width="10%"></td>
             </tr>
-            <tr>
+<pre id ="txt" onclick="UserMe.print()"></pre>
+            <tr id="data">
                 <br>
                 <td width="10%"></td>
                 <td width="60%">
-                   
-
-<p onmousedown="myFunction(this,'red')" 
-onmouseup="myFunction(this,'green')"> Registaration form</p>
-<script>
-    function myFunction(elmnt,clr)
-    {
-        elmnt.style.color=clr;
-    }
-</script>
-
-
-
-                    <fieldset>
-                        <legend><h1>Register</h1> </legend>
-                
-  		<form action ="" method="post">
- 		 Full Name<br> <input type="text" id="name"  onblur="myFunction()" >
-
-          <script>
-            function myFunction() {
-              var x = document.getElementById("name");
-              x.value = x.value.toUpperCase();
-            }
-            </script>
-
-
-
-
-
-
-          <br /><br />
-         Phone<br><input type="number" name="tel"/>
-<br /><br />
-		 age<br><input type="number " name="age" min="18" max="20" />
-<br /><br />
-		 your Favorite color<br> <input type="color" name="color" value="green" />
-<br /><br />
-		 Birthdate<br> <input type="date" name="birthdate" minlength="6" maxlength="32" placeholder="Password"/>
-<br /><br />
-		 Gender <br>
- Female <input type="radio" name="gender" />
- Male <input type="radio" name="gender" />
-<br /><br />
-		 Password <br><input type="password" name="password" minlength="6" maxlength="32" placeholder="Password"/>
-<br /><br />
-		 Confirm password <br><input type="password" name="password" minlength="6" maxlength="32" placeholder="Password"/>
-<br /><br />
- 		 Skills 
-<ul type="square">
-<li><input type="checkbox" name="skills" value="on">HTML</li><br>
-<li><input type="checkbox" name="skills" value="on">CSS</li><br>
-<li><input type="checkbox" name="skills" value="on">JavaScript</li><br>
-<li><input type="checkbox" name="skills" value="on">PHP</li><br>
-</ul>
-<br /><br />
-		 country<br>
-<select name ="dropdown">
-<option value="Ethiopia" selected> Ethiopia</option>
-<option value="Ethiopia" > Keniya</option>
-<option value="Ethiopia" > Ertrea</option>
-<option value="Ethiopia" > somalia</option></select>
-<br /><br />
-		 photo <br><input type="file" value="choose file" no file choosen"/>
-<br /><br />
-		 describe yourself<br> <textarea rows ="10" cols="50" name="description"></textarea>
-<br /><br />
-                 <input type ="button" name="Submit" value="Submit"/>
-                 <input type ="button" name="Reset" value="Reset"/>
-<br />
-  		</form>
-                    </fieldset>
-
-
-
-
-
-                  
-
-                    <p>click here if you need help.</p>
-                      <button id="myBtn">HELP</button>
-                    <p id="demo"></p>
-                    
-                    <script>
-                    document.getElementById("myBtn").addEventListener("click", function() {
-                      document.getElementById("demo").innerHTML = "your registration code is 456 <br>you can try after 30min.";
-                    });
-                    </script>
-                    
-                   
-
-
-
-
-
-
-
-
-
-
-
-
-
-</td>
-               <td width="20%">
-<h2>Recent Posts</h2>
-<ul>
-  <li><h3>Articles</h3></li><br>
-   <ul type="circle">
-   <li>The Importance of Goals, Especially During Difficult Times</li>
-   <li> 5 Steps to Discovering Your Life Purpose In 2022!</li>
-   </ul>
-</ul> 
-<ul>
-  <li><b>Ideas<b></li><br>
-   <ul type="circle">
-   <li>10 Books to Read in The Fall  </li>
-   <li>Top Web Development Projects Ideas</li>
-   </ul>
-</ul> 
-<h2>Most Viewed Articls</h2>
-<ol type="I">
-  <li> Instant Gratification Is Stopping You From Reaching Your Goals! </li>
-   <li>Stop Juggling Between Work And Life</li>
-</ol>
-<h2>IP Project Winners</h2>
-<pre>
-    ----------------------------------
-Rank Award
-----------------------------------
-First Free hosting and support
-Second 5GB Mobile Data
-Third 1GB Mobile Data
-------------------------------
-</pre>
-</td>
+<p id="para">
+<h1>Register</h1>
+ 		 Full Name<br> <input type="text" id="name" onchange="change()" maxlength="50" required size="50"/>
+     
+      <br /><br />
+                      Phone<br><input type="number" name="tel" id="phone" required size="50"/>
+      <br /><br />
+          age<br><input type="number " id="age"name="age" min="18" max="20" required/>
+      <br /><br />
+          your Favorite color<br> <input type="color" id="color" name="color" value="green" />
+      <br /><br />
+          Birthdate<br> <input type="date" id="birthdate" name="birthdate" minlength="6" maxlength="32" placeholder="Password"required/>
+	<br /><br />
+          Gender <br>
+      Female <input type="radio" id="gender" name="gender" />
+      Male <input type="radio" name="gender" />
+      <br /><br />
+          Password <br><input type="password" name="password" minlength="6" maxlength="32" placeholder="Password" required size="50"/>
+      <br /><br />
+          Confirm password <br><input type="password" name="password" minlength="6" maxlength="32" placeholder="Password" required size="50"/>
+      <br /><br />
+          Skills 
+      <ul type="square" id="skills">
+      <li><input type="checkbox" name="skills" value="on">HTML</li><br>
+      <li><input type="checkbox" name="skills" value="on">CSS</li><br>
+      <li><input type="checkbox" name="skills" value="on">JavaScript</li><br>
+      <li><input type="checkbox" name="skills" value="on">PHP</li><br>
+      </ul>
+      <br /><br />
+          country<br>
+      <select name ="dropdown" id="country">
+      <option value="Ethiopia" selected> Ethiopia</option>
+      <option value="Ethiopia" > Keniya</option>
+      <option value="Ethiopia" > Ertrea</option>
+      <option value="Ethiopia" > somalia</option></select>
+      <br /><br />
+          photo <br><input type="file" value="choose file" no file choosen"/>
+      <br /><br />
+          describe yourself<br> <textarea rows ="10" cols="50" name="description"></textarea>
+      <br /><br />
+                      <button onclick="UserMe.info()"> Submit</button>
+                      <input type ="reset" name="Reset" value="Reset"/>
+      <br /> 
+</p> 
+      </td>
+                    <td width="20%">
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><h3>Articles</h3></li><br>
+        <ul type="circle">
+        <li>The Importance of Goals, Especially During Difficult Times</li>
+        <li> 5 Steps to Discovering Your Life Purpose In 2022!</li>
+        </ul>
+      </ul> 
+      <ul>
+        <li><b>Ideas<b></li><br>
+        <ul type="circle">
+        <li>10 Books to Read in The Fall  </li>
+        <li>Top Web Development Projects Ideas</li>
+        </ul>
+      </ul> 
+      <h2>Most Viewed Articls</h2>
+      <ol type="I">
+        <li> Instant Gratification Is Stopping You From Reaching Your Goals! </li>
+        <li>Stop Juggling Between Work And Life</li>
+      </ol>
+      <h2>IP Project Winners</h2>
+      <pre>
+      ---------------------------------
+      Rank    Award 
+      ---------------------------------
+      First   Free hosting and support 
+      Second  5GB Mobile Data 
+      Third   1GB Mobile Data 
+      ----------------------------------
+            </pre>
+            </td>
+            <td width="10%"></td>
+              </tr>
+              <tr>
+              <td width="10%"></td>
+              <td colspan="2"><hr></td>
+              <td width="10%"></td> 
+              </tr>
+              <tr>
                 <td width="10%"></td>
-            </tr>
-            <tr>
-<td width="10%"></td>
-                <td colspan="2"><hr></td>
-                <td width="10%"></td> 
-            </tr>
-            <tr>
-                <td width="10%"></td>
-                <td width="60%">Follow Us:<a href="http://www.twitter.com/neqaneqa">Twitter</a><a href="http://www.facebook.com/neqaneqa">Facebook</td>
-                <td width="20%" align=""right><a href="">Privacy</a> <a href="">Terms of use</a></td>
+                <td width="60%">Follow Us On:<a href="http://www.twitter.com/neqaneqa">Twitter</a> | <a href="http://www.facebook.com/neqaneqa">Facebook </td>
+                <td width="20%" align="right"><a href="">Privacy</a> | <a href="">Terms of use</a></td>
                 <td width="10%"></td>  
-            </tr>
-            <tr>
+                </tr>
+                <tr>
                 <td width="10%"></td>
                 <td colspan="2" align="center">Copyright © AASTU SEng 2021, All Rights Reserved </td>
                 <td width="10%"></td> 
-            </tr>
+                </tr>
         </table>
-<body>
+</body>
 </html>
